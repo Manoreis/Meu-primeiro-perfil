@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@200;300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+#menu-horizontal ul {
+    list-style: none;
+    padding: 10px;
+    background-color: rgb(73, 71, 71);
+    
+}
+
+#menu-horizontal ul li {
+    display: inline;
+}
+
+
+#menu-horizontal ul li a {
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .6s;
+}
+
+
+#menu-horizontal ul li a:hover {
+    background-color: rgb(72, 134, 248);
+}
+
+
+
+#tela_login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}   
+
+figure, h1 {
+    text-align: center;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+h1 {
+    margin-bottom: 1.25rem; /*1 rem = 16px*/
+}
+
+form {
+    text-align: center ;
+}
+
+label {
+    display: inline-block;
+    width: 70px; 
+}
+
+input {
+    font-size: 1.05rem; 
+    border-radius: 5px;
+    border: 1px solid #cecece; 
+    padding: 5px;
+}
+
+input[type="email"], input [type="password"] {
+    width: 250px;
+    margin-bottom: 1rem;
+    height: 1.5rem;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: 130px;
+    height: 2.5rem;
+}
+
+input [type="submit"] {
+    background: #1b0bad;
+    color: #fff;
+}
+
+input [type="submit"]:hover {
+    background-color: #cecece;
+    color: #1d495f;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+input [type="reset"] {
+    background: #ff6600;
+    color: #fff;
+}
+
+input [type="reset"]:hover {
+    background: #cecece;
+    color: #ff6600;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* formatação da página perfil*/
+
+#tela_perfil {
+    width: 720px;
+    height: 100vh;
+    font-size: 1,25rem;
+    margin: 0 auto;
+    color: #191919;
+}
+
+@media (max-width: 720px) {
+    
+#tela_perfil {
+        width: 90%;
+    }
+}
+#tela_perfil h1 {
+    font-size: 1.5rem;
+
+}
+
+#foto_perfil {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #fff;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px #ccc;  /* hv e cor*/
+    position: absolute;
+    top: 50px;
+    right:  20px;
+}
+
+.localizacao, menu_top a {
+    font-size: 0.75rem;
+}
+
+figcaption {
+    display: none;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #191919;
+}
+
+header {
+    width: 100px;
+    height: 350px;
+    background: #ececed;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #ccc;
+    padding: 40px;
+    position: relative; /*para usar absolute internamente*/
+    margin-bottom: 1rem;
+}
+
+#dados {
+    width: 100%;
+    margin-top: 120px;
+}
+
+blockquote {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 30px #ccc;
+
+}
+
+#locais {
+    line-height: 2rem;  /* Altura da linha */
+    margin-top: 10px;
+    margin-left: 1rem;
+    font-size: 1rem;
+    padding: 2px;
+}
+
+.localizacao {
+    color: #222;
+    padding: 1rem;
+
+}
+
+#menu_top {
+    float: right;
+}
+
+#menu_top a {
+    background: #1d495f;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 15px;
+    
+}
+
+#menu_top a hover{
+    text-underline-position:below
+}
+
+section {
+    width: 100%;
+    background: #ececed;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+article {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+article h2, #info_contatos h2 {
+    font-size: 1.85rem;
+    margin-bottom: 1rem;
+
+}
+article ul, article ol {
+    margin-left: 1.5rem;
+}
+
+article li {
+    line-height: 2.5rem;
+}
+
+#info_contatos h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+} 
+
+#info_contatos p {
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+#info_contatos a {
+    text-decoration: none;
+    color: #1d495f;
+}
+
+#rodapé {
+    margin-top: 1rem;
+    background: #ececed;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#rodapé {
+    padding: 2rem;
+}
+
+#rodapé ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+#rodapé a, #ir_para_o_topo {
+    text-decoration: none;
+    color: #1d495f;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#rodapé a:hover {
+    text-decoration: underline;
+    background: #fff;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer img {
+    
+    width: 40px;
+    height: 40px;
+}
+
+/* formatando pagina projeto01.html*/
+
+
