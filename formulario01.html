@@ -1,0 +1,130 @@
+<!DOCTYPE html> <!--inicio tipo de documento-->
+<html lang="pt-br"><!--linguagem-->
+<head> <!--Cabeçalho-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cssform/formulario01.css" midia="screen">
+    <link rel="icon"  href = "imagens/businessman.png">
+    <title>Cadastro</title>
+</head>
+<body> <!--corpo da página-->
+    <div>
+        <h1 id="titulo">Cadastro de Dev's</h1>
+        <p id="subtitulo">Digite as informações</p>
+    </div>
+    <form> <!--inicio do formulário-->
+        <fieldset id="grupo"> <!--inicio - agrupador de campos-->
+            <div id="check">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome" size="46" maxlength="40" id="nome" required>
+            </div>
+            <div>
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="Sobrenome" size="40" maxlength="60" id="Sobrenome" required>
+            </div>
+        </fieldset> <!--fim - agrupador de campos-->
+        <div id="campo"> <!--id campo-->
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="email" name="email" size="46" maxlength="60" id="email" required>
+        </div><br><br>
+        <div> <!-- inicio botões radio-->
+            <label> <strong>Qual aplicação você usa?:</strong></label>
+            <label>
+                <input type="radio" name="devweb" id="frontend" checked>frontend
+            </label>
+
+            <label>
+                <input type="radio" name="devweb" id="backend">backend
+            </label>
+
+            <label>
+                <input type="radio" name="devweb" id="fullstack">fullstack
+            </label>
+        </div> <!-- fim botões radio-->
+        <div> <!-- inicio tipo pull down Estados do Brasil-->
+            <label for="Estados"> <h3><stronng>Estados:</stronng></h3></label>
+            <select id="estado" name="estado"> 
+                <optgroup label="Selecione...">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                </optgroup>
+            </select><!-- fim tipo pull down Estados do Brasil-->
+            <div> <!-- Label digite o municipio do Brasil-->
+                <label><strong>Digite o Município que deseja:</strong></label>
+                <input type="municipio" name="municipio" size="50" maxlength="80" id="municipio">
+            </div>
+            <BR> <BR> <BR>
+        </div> <!-- fim tipo pull down-->
+        <div> <!-- inicio botões radio-->
+            <label> <strong>Selecione as tecnologias que você desenvolve?:</strong> </label>
+            <label>
+                <input type="radio" name="devweb" id="frontend" checked>frontend
+            </label>
+
+            <label>
+                <input type="radio" name="devweb" id="backend">backend
+            </label>
+
+            <label>
+                <input type="radio" name="devweb" id="fullstack">fullstack
+            </label><br>
+        </div><!--fim botões radio-->
+        <fieldset id="grupo"> <!--inicio - agrupador de campos-->
+            <label><strong>Quais a tecnologias você desenvolve?:</strong></label><br><br>
+            <input type="checkbox" name="tecnologia1" id="tecnologia1" value="HTML" checked>
+            <label for="tecnologia1">HTML</label>
+            <input type="checkbox" name="tecnologia2" id="tecnologia2" value="CSS">
+            <label for="tecnologia2">CSS</label>
+            <input type="checkbox" name="tecnologia3" id="tecnologia3" value="Javascript">
+            <label for="tecnologia3">Javascript</label>
+            <input type="checkbox" name="tecnologia4" id="tecnologia4" value="PHP">
+            <label for="tecnologia4">PHP</label>
+            <input type="checkbox" name="tecnologia5" id="tecnologia5" value="C#">
+            <label for="tecnologia5">C#</label>
+            <input type="checkbox" name="tecnologia6" id="tecnologia6" value="Python">
+            <label for="tecnologia6">Python</label>
+            <input type="checkbox" name="tecnologia7" id="tecnologia7" value="JAVA">
+            <label for="tecnologia7">JAVA</label>
+        </fieldset> <!--fim - agrupador de campos-->
+        <div><br><br><!--Area de texto do formulario-->
+            <label><stong>Digite sua mensagem...</stong></label><br>
+            <textarea rows="6" style="width: 47em" id="experiencia" name="experiencia"></textarea>
+        </div>
+        <br>
+            <div><!--button limpar-->
+                &nbsp;
+                <input type="reset" nome="btn-limpar" id="btn-limpar" value="Limpar" />
+            </div>
+
+        <button class="botao" type="submit"><a href="mailto:marcossouzareis@gmail,com"> Concluido</a></button><!--botão enviar-->
+
+    </form><!--fim do formulário-->
+</body><!--fim do corpo da página-->
+</html><!--fim tipo de documento -->
